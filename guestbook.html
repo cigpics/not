@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign the Guestbook!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📘 Guestbook</h1>
+      <p>Leave a message below and let me know you stopped by!</p>
+    </header>
+
+    <main>
+      <form action="https://formspree.io/f/mqaqrlay" method="POST" class="guestbook-form">
+        <label for="name">Your Name or Alias:</label><br>
+        <input type="text" id="name" name="name" required /><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Sign Guestbook ✍️</button>
+      </form>
+
+      <div class="back-home">
+        <a href="index.html">⬅️ Back to Home</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

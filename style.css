@@ -1,195 +1,110 @@
-/* start light mode styling */
-	:root {
-		--text: #231122;
-			--border: #231122;
-			--accent: #9E9793;
-			--bg: #CDAD9D;
-			--gradientBottom: #DDEBD4;
-			--gradientTop: #D5CCB9;
-	}
-	header {
-		background: url('day.png');
-	}
-/* end light mode styling */
-
-
-/* start dark mode styling */
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--text: #6A665A;
-			--border: #473640;
-			--accent: #3A1B2C;
-			--bg: #0B0314;
-			--gradientBottom: #0B0314;
-			--gradientTop: #2D1426;
-			a:link { color: #FFF; }
-		}
-		header {
-			background: url('night.png');
-		}
-	}
-/* end dark mode styling */
-
-
-* { 
-	box-sizing: border-box;
-}
-body {
-	padding: 8px;
-	font-family: 'MS PGothic', sans-serif;
-	color: var(--text);
-
-	/* page background pattern */
-	background-color: var(--gradientTop);
-	background-image:  linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg));
-	background-size: 20px 35px;
-	background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
-}
-
-
-.container {
-	max-width: 55rem;
-	margin: 5vw auto 12px auto;
-	border: 6px ridge var(--border);
-	outline: 3px solid var(--gradientTop);
-	outline-offset: 4px;
-	border-radius: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 5px;
-	gap: 5px;
-
-	/* container background pattern */
-	background-color: var(--gradientBottom);
-	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg));
-}
-/* these control the column widths */
-.small { flex: 1 1 9%; }
-.large { flex: 1 1 82%; }
-.full { flex: 1 1 100%; }
-.half { flex: 1 1 49%; }
-
-
-header {
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 160px; /* change banner height here*/
-	border: 2px ridge var(--border);
-	border-radius: 5px;
-	position: relative;
-}
-header span {
-	font-size: 2.5rem;
-	position: absolute;
-	bottom: 0;
-	right: 10px;
-	margin: 10px;
-	font-weight: bold;
-	text-shadow: 1px 1px var(--text),
-		-1px 1px var(--text),
-		1px -1px var(--accent),
-		-1px -1px var(--accent);
-	color: var(--gradientTop);
-}
-
-
-nav {
-	border: 2px ridge var(--border);
-	border-radius: 5px;
-	padding: 5px;
-	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
-}
-nav div {
-	text-align: center;
-	font-size: 1.25rem;
-	margin: 5px 5px 10px 5px;
-}
-nav a {
-	display: block;
-	margin: 5px;
-	background: linear-gradient(to right,var(--bg),var(--gradientBottom));
-	border-radius: 5px;
-	padding: 2px 7px;
-	text-decoration: none;
-}
-nav a:link, nav a:visited { 
-	color: var(--text);
-}
-nav a:hover, nav a:focus {
-	background: linear-gradient(to right,var(--bg), var(--gradientBottom), var(--gradientTop));
-}
-
-/* optional button styling like in the preview */
-div.small > img {
-	display: block;
-	margin: 5px auto;
-	border:2px ridge var(--border);
-	border-radius: 5px;
-}
-
-
-section {
-	border: 2px ridge var(--border);
-	border-radius: 5px;
-	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
-	padding: 5px;
-}
-
-
-footer {
-	text-align: center;
-	margin-bottom: 5vw;
-	font-size: 0.6rem;
-}
-footer a { 
-	text-decoration: none;
-}
-
-
-h1, h2, h3, h4, h5, h6, p  { 
-	margin: 5px;
-	line-height: 1.2;
-}
-h1 { 
-	font-size: 1.4rem;
-	letter-spacing: 2px;
-	font-weight: normal;
-	text-align: center;
-	border-bottom: 2px ridge var(--border);
-	padding-bottom: 5px;
-}
-h2 { 
-	font-size: 1.25rem;
-	font-weight: normal;
-	text-align: center;
-}
-h3 { 
-	font-size: 1.1rem;
-}
-h4 { 
-	font-size: 1rem;
-	color: var(--accent);
-	padding-left: 12px;
-}
-
-   .dev {
-    display: inline-block;
-    text-align: left;
-        padding-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
+h1
+{font-family: "Lucida Console", Monaco, monospace;
+    font-size: 24px;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;}
+body 
+{
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #fdf6e3;
+    color: #333;
   }
   
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+  
+  header {
+    background-color: #cce;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .sidebars {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    margin-right: 20px;
+  }
+  
+  .sidebar {
+    background-color: #eef;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  main {
+    flex: 1;
+    background-color: #fcfcfc;
+    border: 1px solid #000;
+    padding: 15px;
+    font-size: 16px;
+  }
 
-/* prevents overflow on smaller screens */
-img { max-width: 100%; }
-pre { overflow-x: auto; }
-
-
-a:hover, a:focus {
-	font-style: italic;
-}
-a:visited {
-	color: var(--accent);
-}
+  marquee {
+    background-color: rgb(203, 200, 200);
+    border: 1px dashed #000;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* responsive shit */
+  @media (max-width: 700px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .sidebars {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .sidebar {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+      
+  }
+  footer {
+    align-content:center;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
+    background-color: #cce;
+    border-top: 2px solid #000;
+    font-size: 12px;
+    font-family: 'Lucida Console', monospace;
+    color: #222;
+  }
+  
+  footer img {
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid #666;
+  }
+  
