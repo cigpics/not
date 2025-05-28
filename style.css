@@ -8,13 +8,15 @@ h1
     text-decoration: rgb(68, 68, 68);
     font-style: normal;
     font-variant: normal;
-    text-transform: none;}
+    text-transform: uppercase;}
 body 
 {
     margin: 0;
     padding: 20px 0 0 0;
     font-family: 'Lucida Console', Monaco, monospace;
     background-color: #fdf6e3;
+    background-size:cover;
+    background-repeat:no-repeat;
     color: #333;
   }
   
@@ -54,6 +56,14 @@ body
     font-size: 14px;
   }
   
+  .sidebar2 {
+ background-color: #fff;
+    border: 0px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align:center;
+  }
   main {
     flex: 1;
     background-color: #fcfcfc;
@@ -85,6 +95,11 @@ body
     }
   
     .sidebar {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+
+       .sidebar2 {
       flex: 1 1 100%;
       margin-right: 0;
     }
