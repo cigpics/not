@@ -1,0 +1,129 @@
+h1
+{font-family: "Lucida Console", Monaco, monospace;
+    font-size: 24px;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;}
+
+    
+body 
+{
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #ffffff;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+  
+  header {
+    background-color: #cce;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    margin-bottom:10px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+  }
+  
+  .sidebars {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    margin-right: 20px;
+  }
+  
+  .sidebar {
+    background-color: #eef;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .sidebar2 {
+ background-color: #fff;
+    border: 0px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align:center;
+  }
+  main {
+    flex: 1;
+    background-color: #fcfcfc;
+    border: 1px solid #000;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  marquee {
+    background-color: #eef;
+    border: 1px dashed #000;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* responsive shit */
+  @media (max-width: 700px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .sidebars {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .sidebar {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+
+       .sidebar2 {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+      
+  }
+  footer {
+    align-content:center;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
+    background-color: #cce;
+    border-top: 2px solid #000;
+    font-size: 12px;
+    font-family: 'Lucida Console', monospace;
+    color: #222;
+  }
+  
+  footer img {
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid #666;
+  }
+  

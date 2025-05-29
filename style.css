@@ -9,12 +9,14 @@ h1
     font-style: normal;
     font-variant: normal;
     text-transform: uppercase;}
+
+    
 body 
 {
     margin: 0;
     padding: 20px 0 0 0;
     font-family: 'Lucida Console', Monaco, monospace;
-    background-color: #fdf6e3;
+    background-color: #ffffff;
     background-size:cover;
     background-repeat:no-repeat;
     color: #333;
@@ -40,6 +42,7 @@ body
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    
   }
   
   .sidebars {
